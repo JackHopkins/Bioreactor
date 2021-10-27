@@ -17,5 +17,9 @@ apt-get install libncurses5-dev libncursesw5-dev libudev-dev
 # Compile driver
 g++ -Wall -o sud.a main.cpp hidapi.h sud_data.h linux/hid.c -lcurses -ludev
 
+cd /
+
+echo "max_usb_current=1" >> /boot/config.txt
+
 #Reboot
 reboot
