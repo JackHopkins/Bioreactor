@@ -13,5 +13,5 @@ apt-get install libncurses5-dev libncursesw5-dev libudev-dev
 # Compile driver
 g++ -Wall -o sud.a main.cpp hidapi.h sud_data.h linux/hid.c -lcurses -ludev
 
-# Run driver
-./sud.a
+#Reboot
+reboot
