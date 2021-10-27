@@ -7,8 +7,11 @@ cd SUDDriver/Cpp
 # Update firmware version
 sed -i 's/8708/8710/' main.cpp
 
+# Install dependencies
+apt-get install libncurses5-dev libncursesw5-dev libudev-dev
+
 # Compile driver
-sudo g++ -Wall -o sud.a main.cpp hidapi.h sud_data.h linux/hid.c -lcurses -ludev
+g++ -Wall -o sud.a main.cpp hidapi.h sud_data.h linux/hid.c -lcurses -ludev
 
 # Run driver
-sudo ./sud.a
+./sud.a
