@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Add user to usergroup
+usermod -a -G plugdev pi
+udevadm trigger
+
 # Get Seneye driver
 git clone https://github.com/seneye/SUDDriver.git
 cd SUDDriver/Cpp
