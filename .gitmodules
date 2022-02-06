@@ -1,0 +1,3 @@
+[submodule "sensors/SUDDriver"]
+	path = sensors/SUDDriver
+	url = https://github.com/JackHopkins/bioreactor.git
